@@ -1,5 +1,6 @@
 *.o
 compareImg
+CompareImg
 *.[jJ][pP][gG]
 *.[pP][nN][gG]
 Makefile

@@ -2,3 +2,8 @@
 compareImg
 *.[jJ][pP][gG]
 *.[pP][nN][gG]
+Makefile
+*.txt
+!CMakeLists.txt
+CMakeFiles
+*.cmake

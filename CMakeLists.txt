@@ -5,6 +5,9 @@ find_package( OpenCV REQUIRED )
 #link_directories(${CMAKE_CURRENT_LIST_DIR}/lib)
 include_directories(${OpenCV_INCLUDE_DIRS})
 # add_executable(CompareImg main.cpp)
+# add_library(compare-img STATIC
+#     main.cpp
+# )
 add_library(compare-img SHARED
     main.cpp
 )

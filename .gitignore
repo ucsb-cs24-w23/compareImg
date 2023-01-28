@@ -10,3 +10,4 @@ CMakeFiles
 *.cmake
 *.so
 test/test
+*.a

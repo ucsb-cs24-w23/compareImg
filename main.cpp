@@ -6,7 +6,7 @@ int main(int argc, char **argv)
 {
     if (argc != 3)
     {
-        std::cerr << "Invalid command\nUsage: ./compareImg img1.ext img2.ext" << std::endl;
+        std::cout << -1 << std::flush;
         return 1;
     }
 
@@ -25,13 +25,13 @@ int main(int argc, char **argv)
     }
     catch (Exception &e)
     {
-        std::cerr << "Image input error" << std::endl;
+        std::cerr << -2 << std::flush;
         return 2;
     }
 
     if (img1.empty() || img2.empty())
     {
-        std::cerr << "Could not read the image: " << (img1.empty() ? image_path1 : "") << " " << (img2.empty() ? image_path2 : "") << std::endl;
+        std::cerr << -3 << std::flush;
         return 2;
     }
     Mat out;
@@ -41,6 +41,6 @@ int main(int argc, char **argv)
     diff += sum(out)[1];
     diff += sum(out)[2];
     diff += sum(out)[3];
-    std::cout << diff << std::endl;
+    std::cout << diff << std::flush;
     return 0;
 }

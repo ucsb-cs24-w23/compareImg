@@ -8,3 +8,5 @@ Makefile
 !CMakeLists.txt
 CMakeFiles
 *.cmake
+*.so
+test/test

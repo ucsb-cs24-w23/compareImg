@@ -2,6 +2,10 @@
 
 This is a C++ program/library that can compare absolute difference of images by calling opencv library.
 
+## Why I worte this program?
+
+True, we can just use opencv directly, but the installation and configuration of opencv can be time consuming, and configure it in the autograder environment is not really good idea. This program packaged required opencv library into the binary it generates, enabling the program to run on computers that doesn't have opencv lib installed. Although the binary can be 20M+ large, I think it is still a good way to integrate opencv features into the autograder program.
+
 ## Program version:
 
 In master branch, will generate binary executable for command line operations.
